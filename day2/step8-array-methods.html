@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       /*  
+        var favList = [];
+
+        for(let i = 0; i < 15; i++){
+            favList.push(Math.round(Math.random() * 100))
+        };
+
+        console.log(favList) 
+        */
+        var favNums = [28, 61, 96, 77, 82, 40, 75, 1, 53, 49, 68, 8, 56, 1, 28, 87];
+        /* 
+        for(let i = 0; i < favNums.length; i++){
+            console.log(favNums[i])
+        }; 
+        */
+        /* 
+        favNums.forEach(function(val, idx, arr){
+            console.log(val);
+        }); 
+        */
+        // favNums.forEach( val => console.log(val) );
+       /*  
+        var doubleFavNums = [];
+        favNums.forEach(function(val, idx, arr){
+            doubleFavNums.push(val * 2);
+        }); 
+        console.log(favNums);
+        console.log(doubleFavNums); 
+        */
+        /* 
+        var doubleFavNums = favNums.map(function(val, idx, arr){
+            return val * 2;
+        }); 
+        */
+        /*         
+        var doubleFavNums = favNums.map( val => val * 2 );
+        console.log(favNums);
+        console.log(doubleFavNums);  
+        */
+       /*
+       var lessThan50 = favNums.filter( val => val < 50 );
+       console.log(favNums);
+       console.log(lessThan50);  
+       */
+       /*       
+      var areAllValuesLessThan50 = favNums.every(val => {
+        console.log(val);
+        return val < 50;
+      });
+
+      console.log(areAllValuesLessThan50); 
+      */
+     /*
+     var areSomeValuesLessThan50 = favNums.some(val => {
+         console.log(val);
+         return val < 50;
+     });
+        
+     console.log(areSomeValuesLessThan50);
+    */
+
+    /* 
+    var total = favNums.reduce(function(initVal, val, idx, arr){
+        console.log(val);
+        return initVal + val;
+    }, 0);
+
+    console.log(total); 
+    */
+
+    /* 
+    var total = favNums.reduceRight(function(initVal, val, idx, arr){
+        console.log(val);
+        return initVal + val;
+    }, 0);
+
+    console.log(total); 
+    */
+   console.log(favNums.indexOf(1));
+
+   console.log(favNums.indexOf(1,favNums.indexOf(1)+1));
+   
+   console.log(favNums.lastIndexOf(1));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

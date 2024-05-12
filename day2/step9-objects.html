@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var obj1 = new Object();
+        var obj2 = {};
+        var obj3 = Object.create(null);
+        */
+       var hero = Object.create(null);
+       // hero.title = "Ironman";
+       Object.defineProperty(hero,"title",{ value : "Ironman", writable : true, enumerable : true });
+       console.log(hero.title);// Ironman
+       hero.title = "Iron Monger";
+       console.log(hero.title);// ??? 
+       
+       console.log("################");
+
+       let avenger = {
+            title : "Ironman",
+            power : 6,
+            firstname : "Tony",
+            lastname : "Stark",
+            city : "New York"
+       };
+
+       for(let prop in avenger){
+           console.log(prop)
+       }
+       
+       for(let prop in hero){
+           console.log(prop)
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
