@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1(){
+            console.log("fun 1 was called body onload");
+        };
+        function fun2(){
+            console.log("fun 2 was called window.addEventListener onload");
+        };
+        function fun3(){
+            console.log("fun 3 was called document.addEventListener DOMContentLoaded");
+            document.querySelectorAll("li")[3].innerText = "Selected";
+        };
+        function fun4(){
+            console.log("fun 4 was called inside the body");
+        };
+        window.addEventListener("load", fun2);
+        document.addEventListener("DOMContentLoaded", fun3);
+    </script>
+</head>
+<body onload="fun1()">
+    <script>
+       fun4();
+    </script>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        <li>List 5</li>
+    </ul>
+</body>
+</html>

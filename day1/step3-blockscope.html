@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Scope</title>
+    <script>
+        // var i = undefined;
+        // var user = undefined;
+        // user = "vijay";
+        // console.log(user);
+        /*
+        for(let i = 0; i < 100; i++){
+            console.log("value of i now is ",i);
+        };
+        console.log("log from line 11 ",i);
+        
+        
+        function init(){
+            window.user = "vijay";
+            // Temporal Dead Zone : TDZ
+        };
+        init();
+        console.log(user);
+        */
+
+       // global 
+       var hero = {
+        title : "Ironman",
+        power : 6
+       };
+
+    function checkpower(){
+        if(hero.power > 5){
+            let temptitle = hero.title;
+            hero.title = temptitle+" is strong";
+            console.log(temptitle);// ??? 
+        }
+    };
+
+    checkpower();
+
+    console.log(hero.title);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
