@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+    let hero = {
+        title : "Ironman",
+        power : 6,
+        firstname : "Tony",
+        lastname : "Stark",
+        city : "New York"
+    };
+
+    //    let temphero = hero;
+
+    //    console.log(hero.power);// 6
+    //    console.log(temphero.power);// 6
+    //    temphero.power = 10;
+    //    console.log(temphero.power);// 10
+    //    console.log(hero.power);// 10 
+    /* 
+    var heroTitle = hero.title;
+    var heroPower = hero.power;
+    console.log(heroPower);// 6
+    heroPower = 10;
+    console.log(heroPower);// 10
+    console.log(hero.power);// 6 
+    */
+   // Destructuring Object
+   /* 
+   var {title : heroTitle, power : heroPower} = hero;
+   console.log(heroPower);// 6
+   heroPower = 10;
+   console.log(heroPower);// 10
+   console.log(hero.power);// 6 
+   */
+   
+   // Destructuring Array
+   /*
+   var justiceLeague = ["Batman","Superman","Wonder Women"];
+   var [firsthero,secondhero,thirdhero] = justiceLeague;
+   
+   console.log(firsthero, thirdhero, secondhero);
+   */
+  /*
+    let temphero = JSON.parse(JSON.stringify(hero));
+    console.log(temphero.title);
+    console.log(hero.title);
+    temphero.title = "Iron Monger";
+    console.log(temphero.title);
+    console.log(hero.title);
+  */
+
+    let temphero = {...hero};
+    console.log(temphero.title);
+    console.log(hero.title);
+    temphero.title = "Iron Monger";
+    console.log(temphero.title);
+    console.log(hero.title);
+
+
+    /* 
+        ... 
+        @@
+        **
+    */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

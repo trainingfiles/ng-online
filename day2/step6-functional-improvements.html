@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Improvement in ES</title>
+    <script>
+
+        /* 
+        function adder(num1, num2){
+            let tempnum1 = num1 || 0;
+            let tempnum2 = num2 || 0;
+            return tempnum1 + tempnum2;
+        }; 
+        */
+
+        // default parameter
+        /* function adder(num1 = 0, num2 = 0){
+            return num1 + num2;
+        };
+
+        console.log(adder(9)); */
+        // REST Argument
+        /* 
+        function adder(...nums){
+            let total = 0;
+            for(let i = 0; i < nums.length; i++){
+                total += nums[i]
+            }
+            return total;
+        };
+
+        console.log(adder(9));
+        console.log(adder(9,10));
+        console.log(adder(9,10,11));
+        console.log(adder(9,10,11,12));
+        console.log(adder(9,10,11,12,13));
+        */
+       
+        // Spread Syntax
+        function adder(...nums){
+            let total = 0;
+            for(let i = 0; i < nums.length; i++){
+                total += nums[i]
+            }
+            return total;
+        };
+        let numarray = [9,10,11,12,13];
+        console.log(adder(...numarray));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
