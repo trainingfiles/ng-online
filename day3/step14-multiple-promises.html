@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       let first_promise = function(){
+            return new Promise(function(resolve, reject){
+                setTimeout(function(){
+                    if(true){
+                        resolve("First Promise is resolved");
+                    }else{
+                        reject("First Promise is rejected");
+                    }
+                },4000)
+            })
+       };
+       let second_promise = function(){
+            return new Promise(function(resolve, reject){
+                setTimeout(function(){
+                    if(false){
+                        resolve("Second Promise is resolved");
+                    }else{
+                        reject("Second Promise is rejected");
+                    }
+                },500)
+            })
+       };
+       let third_promise = function(){
+            return new Promise(function(resolve, reject){
+                setTimeout(function(){
+                    if(true){
+                        resolve("Third Promise is resolved");
+                    }else{
+                        reject("Third Promise is rejected");
+                    }
+                },1000)
+            })
+       };
+       /* 
+        expect all promises to be resolved
+        expect any promises to be resolved
+        expect all promises to be settled
+        expect any promise to resolve or reject 
+       */
+       Promise.race([first_promise(), second_promise(), third_promise()])
+       .then( res => console.log(res))
+       .catch( err => console.log(err))
+       .finally(() => console.log("all promises are settled"));
+       // Promise.any();
+       // Promise.allSettled();
+       // Promise.race();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // higher order function
+        let agree = true;
+        let promise = new Promise(function(resolve, reject){
+           setTimeout(function(){
+            if(agree){
+                resolve("Promise is resolved");
+            }else{
+                reject("Promise is rejected");
+            }
+           },4000)
+        });
+
+        promise
+        .then(function(res){
+            console.log("Success 1 :", res);
+            return res.toUpperCase();
+        })
+        .then(function(res){
+            console.log("Success 2 :", res);
+            return res.toLowerCase();
+        })
+        .then(function(res){
+            console.log("Success 3 :", res);
+        })
+        .catch(function(err){
+            console.log("Error :", err);
+        })
+        .finally(function(){
+           console.log("Promise is now settled");
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

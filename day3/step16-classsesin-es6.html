@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        class Hero{
+            title = "Default title";
+            sayTitleInUpperCase(){
+                return this.title;
+            }
+        };
+        var hero1 = new Hero();
+        var hero2 = new Hero();
+        console.log(hero1.title);
+        console.log(hero1.sayTitleInUpperCase === hero2.sayTitleInUpperCase);
+        */
+       /* 
+        class
+            static property
+            static method
+            private property
+                getters
+                setters
+            public property
+            private method
+            public method
+            constructor
+       */
+      class Hero{
+        static version = 1001;
+        // public properties
+        firstname = "default";
+        lastname = "default";
+        // private properties
+        #power = 10;
+        constructor(nfname,nlname){
+            this.firstname = nfname;
+            this.lastname = nlname;
+        }
+        // public method
+        fullname(){
+            return this.firstname+" "+this.lastname;
+        }
+        // getter
+        get power(){
+            return this.#power;
+        }
+        // setter
+        set power(npower){
+            this.#power = npower;
+        }
+        // private method
+        #setBooster(){
+            this.power = this.power * this.power;
+        }
+      }
+      var hero = new Hero("tony","stark");
+      console.log(hero.fullname());
+      console.log(hero.power);// getter
+      hero.power = 20;// setter
+      console.log(hero.power);// getter
+      console.log(Hero.version);// accessing static property
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

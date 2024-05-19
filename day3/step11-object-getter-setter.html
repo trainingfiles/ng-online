@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var hero = Object.create(null);
+       Object.defineProperty(hero,"title",{configurable: true, value : "Ironman", writable : true, enumerable : true });
+       Object.defineProperty(hero,"access_title",{ 
+       get : function(){
+        return this.title;
+       }, 
+       set : function(ntitle){
+        this.title = ntitle;
+       } });
+
+       console.log(hero.access_title);// getter
+       hero.access_title = "Joker"; // setter
+       console.log(hero.access_title);// getter
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

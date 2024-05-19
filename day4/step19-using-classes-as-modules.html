@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+      import { Hero } from "./modules/hero.js";
+    
+      var hero = new Hero("tony","stark");
+      console.log(hero.fullname());
+      console.log(hero.power);// getter
+      hero.power = 20;// setter
+      console.log(hero.power);// getter
+      console.log(Hero.version);// accessing static property
+      console.log("############");
+      console.log(hero.strength);// 
+      
+      var hero1 = new Hero("tony","stark","is invinsible");
+      console.log(hero1.strength);// 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

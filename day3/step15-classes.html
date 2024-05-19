@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //
+        // var title = "Global Title"
+        // console.log(this.title, "line 10");// 
+        var Hero = function(ntitle){
+            this.title = ntitle;
+            // console.log(this.title, "line 13");// 
+           /*  this.sayTitleInUpperCase = function(){
+                return this.title.toUpperCase();
+            } */
+        };
+        Hero.prototype.sayTitleInUpperCase = function(){
+                return this.title.toUpperCase();
+        }
+        var hero1 = new Hero("Hello first instance");
+        var hero2 = new Hero("Hello second instance");
+        console.log(hero1.title);// Default Title
+        // console.log(hero2.title);// Default Title;
+        console.log(hero1.sayTitleInUpperCase());// 
+        console.log(hero2.sayTitleInUpperCase());//
+        
+        console.log(hero1.sayTitleInUpperCase === hero2.sayTitleInUpperCase);// 
+        console.log(hero1.sayTitleInUpperCase);//  === hero2.sayTitleInUpperCase);// 
+        console.log(hero2.sayTitleInUpperCase);// === hero2.sayTitleInUpperCase);// 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
