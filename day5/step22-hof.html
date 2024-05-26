@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+        function composition(fun1, fun2){
+            return function(num){
+                return fun1( fun2(num) );
+            }
+        };
+
+        function firstfun(num){
+            return num + num;
+        };
+
+        function secondfun(num){
+            return num * num;
+        };
+
+        let comp = composition(firstfun, secondfun);
+        console.log(comp(5));// 50 
+        */
+
+       /*
+       function makeHero(obj){    
+           return function(pow){
+               return {
+                   title : obj.title,
+                   power : pow
+                }
+            }   
+        };
+
+        let commonman = {
+            title : "Tony"
+        };
+        */
+       /*  
+       let ironmanInTheMaking = makeHero(commonman);
+       let ironman = ironmanInTheMaking(5);
+       
+       console.log(ironman);
+       */
+        /*  
+        let ironman = makeHero(commonman)(5);
+        console.log(ironman);
+        */
+       // Angular Decorators
+       function Component(TargetClass){
+            return function(params){
+                let tc = new TargetClass()
+                return class{
+                    title = tc.title;
+                    selector = params.selector;
+                    template = params.template;
+                }
+            }
+       };
+
+       class AppComp{
+            title = "App Component's Title"
+       };
+
+      /*   
+       let componentInTheMaking = Component(AppComp);
+
+       AppComp = componentInTheMaking({
+        selector : "app-root",
+        template : "<div> <h2>Welcome to Angular</h2> </div>"
+       }); 
+              
+       console.log(AppComp);
+       */
+       let MyComp = Component(AppComp)({
+        selector : "app-root",
+        template : "<div> <h2>Welcome to Angular</h2> </div>"
+       });
+
+       let mycomp = new MyComp();
+       console.log(mycomp.selector);
+       console.log(mycomp.template);
+       console.log(mycomp.title);
+       document.addEventListener("DOMContentLoaded", function(){
+        document.getElementsByTagName(mycomp.selector)[0].innerHTML = mycomp.template;
+       })
+    </script>
+</head>
+<body>
+    <app-root></app-root>
+</body>
+</html>
