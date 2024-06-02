@@ -1,3 +1,80 @@
+List of extensions
 http://p.ip.fi/_M6z
 
+
+Destructuring
+==================
+http://p.ip.fi/RBbY
+http://p.ip.fi/0QGa
+http://p.ip.fi/eWjP
+http://p.ip.fi/3y5S
+
+
+Functional Improvements
+==================
+http://p.ip.fi/CIga
+http://p.ip.fi/Spt3
+
+
+Array Methods
+==================
+http://p.ip.fi/iyF9
+http://p.ip.fi/qqoa
+http://p.ip.fi/D4V9
+
+
+Day5 typescript
+==================
+http://p.ip.fi/b8fd
+http://p.ip.fi/SjIQ
+http://p.ip.fi/BA7N 
+
+
+Day7 angular 
+==================
+http://p.ip.fi/qHdZ
+http://p.ip.fi/EQic
+http://p.ip.fi/9R4K
+http://p.ip.fi/lSui
+
+
+Object
+==================
+https://p.ip.fi/t6tC
+
+Useful links
+============
 https://jsperf.app/
+https://developer.mozilla.org/en-US/
+https://ecma-international.org/
+
+
+npm i -g @angular/cli 
+ng new steps --create-application=false --ssr=false --standalone=false
+ng g application step1-folder --style=css --routing=false --ssr=false --standalone=false 
+ng g app step2-binding --style=css --routing=false --ssr=false --standalone=false -s -t -S 
+ng g app step1-communication --style=css --routing=false --ssr=false --standalone=false -s -t -S 
+ng g app step2-directives --style=css --routing=false --ssr=false --standalone=false -s -t -S 
+
+ng g app step1-communication 
+--style=css 
+--routing=false 
+--ssr=false 
+--standalone=false 
+--inlineStyle -s do not generate external css file
+--inlineTemplate -t do not generate external html file
+--
+ -S do not generate test files  
+
+
+ng serve step2-binding 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NVM : Node Version Manager Cory Butler
+
+https://github.com/coreybutler/nvm-windows
+
+https://github.com/coreybutler/nvm-windows/releases
+
+https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe
