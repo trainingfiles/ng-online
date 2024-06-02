@@ -1,0 +1,660 @@
+data = {
+    "heroes": [
+      {
+        "id": "1",
+        "name": "Batman",
+        "powerstats": {
+          "intelligence": "100",
+          "strength": "26",
+          "speed": "27",
+          "durability": "50",
+          "power": "47",
+          "combat": "100"
+        },
+        "biography": {
+          "full-name": "Bruce Wayne",
+          "place-of-birth": "Crest Hill, Bristol Township; Gotham County",
+          "publisher": "DC Comics",
+          "release-date": "6/19/1989",
+          "earning": "41.13",
+          "budget": "3.5"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'2",
+            "188 cm"
+          ],
+          "weight": [
+            "210 lb",
+            "95 kg"
+          ],
+          "eye-color": "blue",
+          "hair-color": "black"
+        },
+        "work": {
+          "occupation": "Businessman",
+          "base": "Batcave, Stately Wayne Manor, Gotham City; Hall of Justice, Justice League Watchtower"
+        },
+        "image": {
+          "url": "images/batman.jpg"
+        }
+      },
+      {
+        "id": "2",
+        "name": "Ant-Man",
+        "powerstats": {
+          "intelligence": "75",
+          "strength": "18",
+          "speed": "17",
+          "durability": "40",
+          "power": "53",
+          "combat": "30"
+        },
+        "biography": {
+          "full-name": "Scott Lang",
+          "place-of-birth": "Coral Gables, Florida",
+          "publisher": "Marvel Comics",
+          "release-date": "7/24/2015",
+          "earning": "519.3",
+          "budget": "16.93"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'0",
+            "183 cm"
+          ],
+          "weight": [
+            "190 lb",
+            "86 kg"
+          ],
+          "eye-color": "Blue",
+          "hair-color": "Blond"
+        },
+        "work": {
+          "occupation": "Electronics Technician,",
+          "base": "South Beach, Miami, Florida; formerly Farmingdale, Long Island, New York"
+        },
+        "image": {
+          "url": "images/antman.jpg"
+        }
+      },
+      {
+        "id": "3",
+        "name": "Scarlet Witch",
+        "powerstats": {
+          "intelligence": "100",
+          "strength": "10",
+          "speed": "29",
+          "durability": "70",
+          "power": "100",
+          "combat": "80"
+        },
+        "biography": {
+          "full-name": "Wanda Maximoff",
+          "place-of-birth": "Wundagore Mountain, Transia",
+          "publisher": "Marvel Comics",
+          "release-date": "4/24/2015",
+          "earning": "140.5",
+          "budget": "204.6"
+        },
+        "appearance": {
+          "gender": "Female",
+          "race": "Mutant",
+          "height": [
+            "5'7",
+            "170 cm"
+          ],
+          "weight": [
+            "132 lb",
+            "59 kg"
+          ],
+          "eye-color": "Blue",
+          "hair-color": "Brown"
+        },
+        "work": {
+          "occupation": "Adventurer; formerly witchcraft tutor, housewife, terrorist",
+          "base": "Mobile; formerly The Works; Avengers Compound, California; Avengers Mansion, New York"
+        },
+        "image": {
+          "url": "images/scarletwitch.jpg"
+        }
+      },
+      {
+        "id": "4",
+        "name": "Deadpool",
+        "powerstats": {
+          "intelligence": "69",
+          "strength": "32",
+          "speed": "50",
+          "durability": "100",
+          "power": "100",
+          "combat": "100"
+        },
+        "biography": {
+          "full-name": "Wade Wilson",
+          "place-of-birth": "Canada",
+          "publisher": "Evil Deadpool",
+          "release-date": "2/12/2016",
+          "earning": "783.1",
+          "budget": "58"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Mutant",
+          "height": [
+            "6'2",
+            "188 cm"
+          ],
+          "weight": [
+            "210 lb",
+            "95 kg"
+          ],
+          "eye-color": "Brown",
+          "hair-color": "No Hair"
+        },
+        "work": {
+          "occupation": "Mercenary; former enforcer, government operative, sumo wrestler, soldier, assassin, anti-hero, others",
+          "base": "Cavern-X, Sedona, Arizona, Mobile"
+        },
+        "image": {
+          "url": "images/deadpool.jpg"
+        }
+      },
+      {
+        "id": "5",
+        "name": "Captain Marvel",
+        "powerstats": {
+          "intelligence": "84",
+          "strength": "88",
+          "speed": "71",
+          "durability": "95",
+          "power": "100",
+          "combat": "90"
+        },
+        "biography": {
+          "full-name": "Carol Danvers",
+          "place-of-birth": "Boston, Massachusetts",
+          "publisher": "Binary",
+          "release-date": "3/8/2019",
+          "earning": "0",
+          "budget": "15.2"
+        },
+        "appearance": {
+          "gender": "Female",
+          "race": "Human-Kree",
+          "height": [
+            "5'11",
+            "180 cm"
+          ],
+          "weight": [
+            "165 lb",
+            "74 kg"
+          ],
+          "eye-color": "Blue",
+          "hair-color": "Blond"
+        },
+        "work": {
+          "occupation": "Former National Aeronautics and Space Administration security Chief, former magazine editor, former freelance writer, former military intelligence officer.",
+          "base": "Avengers Mansion"
+        },
+        "image": {
+          "url": "images/captainmarvel.jpg"
+        }
+      },
+      {
+        "id": "6",
+        "name": "Captain America",
+        "powerstats": {
+          "intelligence": "69",
+          "strength": "19",
+          "speed": "38",
+          "durability": "55",
+          "power": "60",
+          "combat": "100"
+        },
+        "biography": {
+          "full-name": "Steve Rogers",
+          "place-of-birth": "Manhattan, New York City, New York",
+          "publisher": "Marvel Comics",
+          "release-date": "7/29/2011",
+          "earning": "370.6",
+          "budget": "140.0"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'2",
+            "188 cm"
+          ],
+          "weight": [
+            "240 lb",
+            "108 kg"
+          ],
+          "eye-color": "blue",
+          "hair-color": "blond"
+        },
+        "work": {
+          "occupation": "Adventurer, federal official, intelligence operative; former soldier, Hydra agent, liaison between S.H.I.E.L.D. and the Avengers, police officer, teacher, sparring partner.",
+          "base": "New York City"
+        },
+        "image": {
+          "url": "images/captainamerica.jpg"
+        }
+      },
+      {
+        "id": "7",
+        "name": "Spider-Man",
+        "powerstats": {
+          "intelligence": "90",
+          "strength": "55",
+          "speed": "67",
+          "durability": "75",
+          "power": "74",
+          "combat": "85"
+        },
+        "biography": {
+          "full-name": "Peter Parker",
+          "place-of-birth": "New York, New York",
+          "publisher": "Marvel Comics",
+          "release-date": "4/29/2002",
+          "earning": "821.7",
+          "budget": "139"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "5'10",
+            "178 cm"
+          ],
+          "weight": [
+            "165 lb",
+            "74 kg"
+          ],
+          "eye-color": "Hazel",
+          "hair-color": "Brown"
+        },
+        "work": {
+          "occupation": "Freelance photographer, teacher",
+          "base": "New York, New York"
+        },
+        "image": {
+          "url": "images/spiderman.jpg"
+        }
+      },
+      {
+        "id": "8",
+        "name": "Doctor Strange",
+        "powerstats": {
+          "intelligence": "100",
+          "strength": "10",
+          "speed": "12",
+          "durability": "84",
+          "power": "100",
+          "combat": "60"
+        },
+        "biography": {
+          "full-name": "Stephen Strange",
+          "place-of-birth": "Philadelphia, Pennsylvania",
+          "publisher": "Marvel Comics",
+          "release-date": "10/13/2016",
+          "earning": "677.7",
+          "budget": "236.6"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'2",
+            "188 cm"
+          ],
+          "weight": [
+            "180 lb",
+            "81 kg"
+          ],
+          "eye-color": "Grey",
+          "hair-color": "Black"
+        },
+        "work": {
+          "occupation": "Sorcerer Supreme, retired neurosurgeon",
+          "base": "-"
+        },
+        "image": {
+          "url": "images/doctorstrange.jpg"
+        }
+      },
+      {
+        "id": "9",
+        "name": "Black Panther",
+        "powerstats": {
+          "intelligence": "88",
+          "strength": "16",
+          "speed": "30",
+          "durability": "60",
+          "power": "41",
+          "combat": "100"
+        },
+        "biography": {
+          "full-name": "T'Challa",
+          "place-of-birth": "Wakanda, Africa",
+          "publisher": "Marvel Comics",
+          "release-date": "1/29/2018",
+          "earning": "1344.0",
+          "budget": "200"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'0",
+            "183 cm"
+          ],
+          "weight": [
+            "200 lb",
+            "90 kg"
+          ],
+          "eye-color": "Brown",
+          "hair-color": "Black"
+        },
+        "work": {
+          "occupation": "King and Chieftain of Wakanda, scientist; former school teacher",
+          "base": "Wakanda, Mobile"
+        },
+        "image": {
+          "url": "images/blackpanther.jpg"
+        }
+      },
+      {
+        "id": "10",
+        "name": "Hulk",
+        "powerstats": {
+          "intelligence": "88",
+          "strength": "100",
+          "speed": "63",
+          "durability": "100",
+          "power": "98",
+          "combat": "85"
+        },
+        "biography": {
+          "full-name": "Bruce Banner",
+          "place-of-birth": "Dayton, Ohio",
+          "publisher": "Marvel Comics",
+          "release-date": "6/17/2003",
+          "earning": "245.4",
+          "budget": "120.0"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human / Radiation",
+          "height": [
+            "8'0",
+            "244 cm"
+          ],
+          "weight": [
+            "1400 lb",
+            "630 kg"
+          ],
+          "eye-color": "Green",
+          "hair-color": "Green"
+        },
+        "work": {
+          "occupation": "Nuclear physicist, Agent of S.H.I.E.L.D.",
+          "base": "(Banner) Hulkbuster Base, New Mexico, (Hulk) mobile, but prefers New Mexico"
+        },
+        "image": {
+          "url": "images/hulk.jpg"
+        }
+      },
+      {
+        "id": "11",
+        "name": "Iron Man",
+        "powerstats": {
+          "intelligence": "100",
+          "strength": "85",
+          "speed": "58",
+          "durability": "85",
+          "power": "100",
+          "combat": "64"
+        },
+        "biography": {
+          "full-name": "Tony Stark",
+          "place-of-birth": "Long Island, New York",
+          "publisher": "Marvel Comics",
+          "release-date": "5/1/2008",
+          "earning": "585.2",
+          "budget": "140.3"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'6",
+            "198 cm"
+          ],
+          "weight": [
+            "425 lb",
+            "191 kg"
+          ],
+          "eye-color": "Blue",
+          "hair-color": "Black"
+        },
+        "work": {
+          "occupation": "Inventor, Industrialist; former United States Secretary of Defense",
+          "base": "Seattle, Washington"
+        },
+        "image": {
+          "url": "images/ironman.jpg"
+        }
+      },
+      {
+        "id": "12",
+        "name": "Black Widow",
+        "powerstats": {
+          "intelligence": "75",
+          "strength": "13",
+          "speed": "33",
+          "durability": "30",
+          "power": "36",
+          "combat": "100"
+        },
+        "biography": {
+          "full-name": "Natasha Romanoff",
+          "place-of-birth": "Volgograd",
+          "publisher": "Marvel Comics",
+          "release-date": "1/1/2021",
+          "earning": "0",
+          "budget": "0"
+        },
+        "appearance": {
+          "gender": "Female",
+          "race": "Human",
+          "height": [
+            "5'7",
+            "170 cm"
+          ],
+          "weight": [
+            "131 lb",
+            "59 kg"
+          ],
+          "eye-color": "Green",
+          "hair-color": "Auburn"
+        },
+        "work": {
+          "occupation": "Adventurer, Intelligence agent, former ballerina",
+          "base": "Mobile"
+        },
+        "image": {
+          "url": "images/blackwidow.jpg"
+        }
+      },
+      {
+        "id": "13",
+        "name": "Hawkeye",
+        "powerstats": {
+          "intelligence": "56",
+          "strength": "12",
+          "speed": "21",
+          "durability": "10",
+          "power": "29",
+          "combat": "80"
+        },
+        "biography": {
+          "full-name": "Clint Barton",
+          "place-of-birth": "Waverly, Iowa",
+          "publisher": "Goliath",
+          "release-date": "4/24/2015",
+          "earning": "140.5",
+          "budget": "204.6"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'3",
+            "191 cm"
+          ],
+          "weight": [
+            "230 lb",
+            "104 kg"
+          ],
+          "eye-color": "Blue",
+          "hair-color": "Blond"
+        },
+        "work": {
+          "occupation": "Adventurer",
+          "base": "-"
+        },
+        "image": {
+          "url": "images/hawkeye.jpg"
+        }
+      },
+      {
+        "id": "14",
+        "name": "Thor",
+        "powerstats": {
+          "intelligence": "69",
+          "strength": "100",
+          "speed": "83",
+          "durability": "100",
+          "power": "100",
+          "combat": "100"
+        },
+        "biography": {
+          "full-name": "Thor Odinson",
+          "place-of-birth": "Asgard",
+          "publisher": "Rune King Thor",
+          "release-date": "4/29/2015",
+          "earning": "449.3",
+          "budget": "150.0"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Asgardian",
+          "height": [
+            "6'6",
+            "198 cm"
+          ],
+          "weight": [
+            "640 lb",
+            "288 kg"
+          ],
+          "eye-color": "Blue",
+          "hair-color": "Blond"
+        },
+        "work": {
+          "occupation": "King of Asgard; formerly EMS Technician; Physician",
+          "base": "New York, New York"
+        },
+        "image": {
+          "url": "images/thor.jpg"
+        }
+      },
+      {
+        "id": "15",
+        "name": "Vision",
+        "powerstats": {
+          "intelligence": "100",
+          "strength": "72",
+          "speed": "54",
+          "durability": "95",
+          "power": "100",
+          "combat": "70"
+        },
+        "biography": {
+          "full-name": "Vision",
+          "place-of-birth": "New York",
+          "publisher": "Anti-Vision",
+          "release-date": "4/24/2015",
+          "earning": "140.5",
+          "budget": "204.6"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Android",
+          "height": [
+            "6'3",
+            "191 cm"
+          ],
+          "weight": [
+            "300 lb",
+            "135 kg"
+          ],
+          "eye-color": "Gold",
+          "hair-color": "No Hair"
+        },
+        "work": {
+          "occupation": "-",
+          "base": "Mobile. Formerly Avengers Mansion, New York City and Avengers Compound"
+        },
+        "image": {
+          "url": "images/vision.jpg"
+        }
+      },
+      {
+        "id": "16",
+        "name": "Falcon",
+        "powerstats": {
+          "intelligence": "38",
+          "strength": "13",
+          "speed": "50",
+          "durability": "28",
+          "power": "22",
+          "combat": "64"
+        },
+        "biography": {
+          "full-name": "Sam Wilson",
+          "place-of-birth": "New York, New York",
+          "publisher": "Marvel Comics",
+          "release-date": "4/24/2015",
+          "earning": "140.5",
+          "budget": "204.6"
+        },
+        "appearance": {
+          "gender": "Male",
+          "race": "Human",
+          "height": [
+            "6'2",
+            "188 cm"
+          ],
+          "weight": [
+            "240 lb",
+            "108 kg"
+          ],
+          "eye-color": "Brown",
+          "hair-color": "Black"
+        },
+        "work": {
+          "occupation": "Crimefighter, (former) freelance artist",
+          "base": "New York, New York; formerly Avengers Mansion, New York City, New York; S.H.I.E.L.D. Helicarrier."
+        },
+        "image": {
+          "url": "images/falcon.jpg"
+        }
+      }
+    ]
+  }
