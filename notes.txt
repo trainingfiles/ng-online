@@ -37,6 +37,12 @@ http://p.ip.fi/EQic
 http://p.ip.fi/9R4K
 http://p.ip.fi/lSui
 
+Day8 angular
+==================
+http://p.ip.fi/qkb9
+http://p.ip.fi/894J
+http://p.ip.fi/k0tm
+http://p.ip.fi/8rmX
 
 Object
 ==================
@@ -63,8 +69,7 @@ ng g app step1-communication
 --standalone=false 
 --inlineStyle -s do not generate external css file
 --inlineTemplate -t do not generate external html file
---
- -S do not generate test files  
+--skipTests -S do not generate test files  
 
 
 ng serve step2-binding 
@@ -78,3 +83,5 @@ https://github.com/coreybutler/nvm-windows
 https://github.com/coreybutler/nvm-windows/releases
 
 https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe
+
+https://specificity.keegan.st/
